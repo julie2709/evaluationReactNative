@@ -57,6 +57,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: "bold",
     marginVertical: 30,
+    color : "#4a90e2",
   },
   containerRow: {
     flexDirection: "row",
@@ -75,7 +76,7 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   button: {
-    backgroundColor: "#9B4F0F",
+    backgroundColor: "#4a90e2",
     paddingVertical: 12,
     paddingHorizontal: 15,
     borderRadius: 5,

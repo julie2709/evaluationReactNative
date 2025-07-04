@@ -4,6 +4,7 @@ import { useState } from "react";
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
 import AddNewGame from "./components/AddNewGame";
 import GameList from "./components/GameList";
+import Header from "./components/Header";
 
 export default function App() {
   const [title, setTitle] = useState("");
@@ -117,6 +118,9 @@ export default function App() {
 
   return (
     <View style={styles.container}>
+   
+
+      <Header gamePlays={gamePlays} />
       <Text style={styles.title}>titre des jeux videos ...</Text>
       <GameList gamePlays={gamePlays} />
 
@@ -137,14 +141,16 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#90AFC5",
     paddingTop: 50,
     paddingHorizontal: 20,
   },
   title: {
+    paddingTop: 30,
     fontSize: 24,
     fontWeight: "bold",
     marginBottom: 20,
     textAlign: "center",
+     color : "#4a90e2",
   },
 });
